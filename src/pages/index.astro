@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="Welcome to Astro.">
+  <header class="min-h-screen w-full flex items-center justify-center">
+    <div class="text-white max-w-4xl w-full">
+      <h1 class="text-6xl font-semibold text-center">
+        Contribulle con tu readme para darte a <span
+          class="bg-gradient-to-r from-[#fd2a1f] to-[#fda09b] bg-clip-text text-transparent"
+          >conocer</span>
+      </h1>
+      <p class="text-lg text-center text-zinc-400 font-medium mt-4">
+        Agrega tu perfil de github para que mas personas tengan una inspiracion
+      </p>
+      <div class="flex gap-2 m-auto justify-center items-center mt-6">
+        <a
+          href=""
+          target="_blank"
+          class="rounded-3xl bg-[#240A0B] px-4 py-2 font-semibold  flex items-center gap-2 max-w-max"
+          >comenzar <Icon class="text-zinc-400" name="arrow" /></a
+        >
+        <a href="" target="_blank">
+          <Icon class="text-4xl" name="github" />
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>hola madre mia</main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>
